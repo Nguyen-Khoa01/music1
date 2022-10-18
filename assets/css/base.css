@@ -1,0 +1,111 @@
+:root{
+ --white-color: #fff;
+ --black-color:#000;
+ --text-color: #333;
+ --sidebar-background:hsla(0,0%,100%,0.05);
+ --sidebar-textcolor: #cacaca;
+ --advertise-color:#ffdb00;
+ --scroll-thumb-bg:hsla(0,0%,100%,0.3);
+ --border-primary:hsla(0,0%,100%,0.1);
+ --text-secondary:hsla(0,0%,100%,0.5);
+ --active_item-color:#eeecff2b;
+ --text-placeholder:#dadada;
+ --iconheader-color:#704e8b;
+ --setting-icon-text:#d8d8d8;
+ --purple-primary:#ed2b91;
+ --blue-primary:#3460f5;
+ --layout-bg-blue: #061d50;
+ --player-bg-blue:rgba(0,0,0,0.2);
+ --hover-playlist:hsl(0deg 0% 0% / 30%);
+ --search-text:#eee;
+ --hover-text:#fe63da;
+ --height-sidebar__advertise:200px;
+ --padding-content:59px;
+ --header__search:40px;
+ --header__right-item: 40px;
+ --app__content-height:70px;
+ --sidebar__scroll:400px;
+ --layout-bg:#37075d;
+ --primary-bg:#6a39af;
+ --dark-alpha-50:rgba(0,0,0,0.5);
+ --logo-sidebar:url(https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: inherit;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color:var(--white-color);
+
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+i {
+    display: inline-block;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ol, ul{
+    list-style: none;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.active_item {
+    background-color: var(--active_item-color);
+}
+.btn-margin{
+    margin-left: 1.6rem;
+}
+.modal.active-modal{
+    display: flex;
+}
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__body{
+    width: 900px;
+    height: 596px;
+    background-color: var(--primary-bg);
+    margin: auto;
+    border-radius:20px;
+    z-index: 999;
+    overflow: hidden visible;
+    position: relative;
+}
+.modal__body::-webkit-scrollbar{
+    display: none;
+}
+.columns{
+    margin: 0 -7px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal__body-iconClose{
+    position: absolute;
+}

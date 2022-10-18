@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts_icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Music App</title>
+</head>
+<body>
+    <div class="app grid">
+            <!-- sidebar -->
+            <div class="app__sidebar">
+                <div class="sidebar__logo">
+                    
+                </div>
+    
+                <div class="sidebar__nav">
+                        <ul class="sidebar__nav-list">
+                            <li class="sidebar__nav-item active_item">
+                                <i class="fa-regular fa-user"></i>
+                                <span>Cá Nhân</span>
+                                <i class="far fa-play-circle icon_hover"></i>
+                            </li>
+                            <li class="sidebar__nav-item">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <span>Khám phá</span>
+                            </li>
+                            <li class="sidebar__nav-item">
+                                <i class="ti-stats-up"></i>
+                                <span>#zingchart</span>
+                                <i class="far fa-play-circle icon_hover"></i>
+                            </li>
+                            <li class="sidebar__nav-item">
+                                <i class="fa-solid fa-radio"></i>
+                                <span>Radio</span>
+                                <i class="far fa-play-circle icon_hover"></i>
+                            </li>
+                            <li class="sidebar__nav-item">
+                                <i class="fa-regular fa-newspaper"></i>
+                                <span>Theo Dõi</span>
+                            </li>
+                        </ul>
+                </div>
+                <div class="sidebar_line"></div>
+                <div class="sidebar__scroll">
+                    <div class="sidebar__subnav">
+                        <ul class="sidebar__subnav-list">
+                            <li class="sidebar__subnav-item">
+                                <i class="ti-music-alt"></i>
+                                <span>Nhạc mới</span>
+                                <i class="far fa-play-circle icon_hover"></i>
+                            </li>
+                            <li class="sidebar__subnav-item">
+                                <i class="fa-solid fa-icons"></i>
+                                <span>Thể loại</span>
+                            </li>
+                            <li class="sidebar__subnav-item">
+                                <i class="ti-star"></i>
+                                <span>Top 100</span>
+                            </li>
+                            <li class="sidebar__subnav-item">
+                                <i class="fa-solid fa-compact-disc"></i>
+                                <span>NV</span>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="sidebar__advertise">
+                        <p class="sidebar__advertise-description">Nghe nhạc không quảng cáo cùng kho nhạc Vip</p>
+                        <a href="#" class="sidebar__advertise-btn">NÂNG CẤP VIP</a> 
+                    </div>
+                    
+                    <div class="sidebar__library">
+                        <div class="sidebar__library-create">
+                            <p class="sidebar__library-create-description">Thư viện</p>
+                            <i></i>
+                        </div>
+                        <ul class="sidebar__library-list">
+                            <li class="sidebar__library-item">
+                                <i class="ti-music-alt"></i>
+                                <span> Bài hát</span>
+                            </li>
+                            <li class="sidebar__library-item">
+                                <i class="fa-regular fa-rectangle-list"></i>
+                                <span>Playlist</span>
+                            </li>
+                            <li class="sidebar__library-item">
+                                <i class="ti-time"></i>
+                                <span>Gần đây</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="sidebar__playlist">
+                    <i class="ti-plus"></i>
+                    <p class="sidebar__playlist-description">Tạo playlist mới</p>
+                </div>
+                
+            </div> 
+            <!-- Nội dung -->
+            <div class="app__content">
+                    <div class="app__header">
+                        <div class="header-left">
+                            <button class="header__button">
+                                <i class="ti-arrow-left"></i>
+                             </button>
+                            <button class="header__button">
+                                <i class="ti-arrow-right"></i>
+                            </button>
+                            <div class="header__search">
+                                 <button class="header__search-btn">
+                                    <i class="ti-search"></i>
+                                 </button>
+                                 <input type="text" class="header__search-input " placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát...">
+                                 <ul class="header__search-list">
+                                     <div class="header__search-list-title">
+                                        <p>Đề xuất cho bạn</p>
+                                     </div>
+                                    <li class="header__search-item">
+                                        <i class="ti-stats-up"></i>
+                                        <p>nhìn về</p>
+                                    </li>
+                                    <li class="header__search-item">
+                                        <i class="ti-stats-up"></i>
+                                        <p>Pháo hồng</p>
+                                    </li>
+                                    <li class="header__search-item">
+                                        <i class="ti-stats-up"></i>
+                                        <p>dang dỏ</p>
+                                    </li>
+                                    <li class="header__search-item">
+                                        <i class="ti-stats-up"></i>
+                                        <p>podcast</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <ul class="header__right-list">
+                                    <li class="header__right-item open-modal">
+                                        <i class="fas fa-tshirt"></i>
+                                        <div class="header__right-item-note">
+                                            <p>Chủ đề</p>
+                                        </div>
+                                    </li>
+                                    <li class="header__right-item ">
+                                        <i class="far fa-gem"></i>
+                                        <div class="header__right-item-note upwith">
+                                            <p>Nâng cấp vip</p>
+                                        </div>
+                                    </li>
+                                    <li class="header__right-item ">
+                                        <input type="file" id="header__right-item-export" name="export">
+                                        <label for="header__right-item-export">
+                                            <i class="ti-export"></i>
+                                        </label>
+                                        <div class="header__right-item-note">
+                                            <p>Tải lên</p>
+                                        </div>
+                                    </li>
+                                    <li class="header__right-item">
+                                        <i class="ti-settings"></i>
+                                        <div class="header__right-item-note">
+                                            <p>Cài đặt</p>
+                                        </div>
+                                    </li>
+                                    <li class="header__right-item">
+                                        <img src="" alt="">
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ////////////////// -->
+                    <div class="app__boby">
+                        <div class="body__title">
+                            <h1> Thư viện</h1>
+                            <div class="body__title-btn color-Change">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="body__playlist">
+                            <div class="body__playlist-header">
+                                <div class="playlist__header-left">
+                                    <h1>PLAYLIST</h1>
+                                    <div class="playlist__header-left-btn">
+                                        <i class="ti-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="playlist__header-right">
+                                    <p>TẤT CẢ </p>
+                                    <i class="ti-angle-right"></i>
+                                </div>
+                            </div>
+                            <div class="body__playlist-avatar">
+                                <div class="playlist__avatar-icon">
+                                    <i class="ti-close"></i>
+                                    <i class="far fa-play-circle"></i>
+                                    <i class="ti-more"></i>
+                                </div>
+                            </div>
+                            <p class="body__playlist-description">hj</p>
+                            <h3 class="body__playlist-name">Nguyễn Đăng Khoa</h3>
+                        </div>
+                        <div class="body__music">
+                            <div class="body__music-title">
+                                <ul class="music__title-item">
+                                    <li class="music__title-list active_item-music">Bài hát</li>
+                                    <li class="music__title-list ">Podcast</li>
+                                    <li class="music__title-list ">Album</li>
+                                    <li class="music__title-list ">MV</li>
+                                </ul>
+                                <div class="music__title-line color-Change"></div>
+                            </div>
+                            <div class="body__music-pane active-pane">
+                                <div class="body__music-btn">
+                                    <a href="" class="active-btn color-Change">Yêu thích</a>
+                                    <a href="" class="btn-margin active-btn-hover">Đã tải lên</a>
+                                </div>
+                                <div class="body__music-songs">
+                                    <div class="body__music-songs-title">
+                                         <p>Bài hát</p>
+                                         <p>Album</p>
+                                         <p>Thời gian</p>   
+                                    </div>
+                                    <ul class="body__music-songs-item">                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body__music-pane ">
+                                <div class="body__music-btn">
+                                    <a href="" class="active-btn color-Change">Tập mới</a>
+                                    <a href="" class="btn-margin active-btn-hover">Tập đã lưu</a>
+                                    <a href="" class="btn-margin active-btn-hover">Chương trình</a>
+                                </div>
+                                <div class="body__music-songs">
+                                        <div class="body__music-songs-podcast">
+                                                <div class="body__music-songs-empty"></div>
+                                                <p>Không có tập mới</p>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="body__music-pane ">
+                                <div class="body__music-songs">
+                                        <div class="body__music-songs-podcast">
+                                                <div class="body__music-songs-abum-empty"></div>
+                                                <p>Chưa có album trong thư viện cá nhân</p>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="body__music-pane ">
+                                <div class="body__music-songs">
+                                        <div class="body__music-songs-podcast">
+                                                <div class="body__music-songs-mv-empty"></div>
+                                                <p>Chưa có MV trong thư viện cá nhân</p>
+                                                <a href="">khám phá ngay</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>  
+                <!-- /////////player////////// -->
+            <div class="app_player header-playlist">
+               <div class="app_player-overlay ">
+
+                <div class="player-controls-left">
+                    <div class="player-controls-left-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="player-controls-left-name">
+                        <p class="player-controls-left-name__song">trời giấu trời mang đi</p>
+                        <p class="player-controls-left-name__author">AMEE,Viruss</p>
+                    </div>
+                    <ul class="player-controls-left-icon music__songs-time-item">
+                        <li class="music__songs-time-list">
+                            <i class="fas fa-heart"></i>
+                        </li>
+                        <li class="music__songs-time-list">
+                            <i class="ti-more-alt"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="player-controls__player">
+                    <ul class="player-controls__player-item music__songs-time-item play">
+                        <li class="player-controls__player-list music__songs-time-list btn-random-song">
+                                <i class="ti-control-shuffle"></i>
+                        </li>
+                        <li class="player-controls__player-list music__songs-time-list btn-prev-song">
+                                <i class="ti-control-skip-backward icon-backward"></i>
+                        </li>
+                        <li class="player-controls__player-list music__songs-time-list btn-toggle-play">
+                                <i class="fa-regular fa-circle-play icon-play"></i>
+                                <i class="fa-regular fa-circle-pause icon-pause"></i>
+                        </li>
+                        <li class="player-controls__player-list music__songs-time-list btn-next-song">
+                                <i class="ti-control-skip-forward"></i>
+                        </li>
+                        <li class="player-controls__player-list music__songs-time-list btn-repeat-song ">
+                                <i class="fa-solid fa-repeat"></i>
+                        </li>
+                    </ul>
+                    <div class="player-controls__player-audio">
+                        <p class="player-controls__player-audio-timeStart">00:00</p>
+                        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                        <audio id="audio" src=""></audio>
+                        <p class="player-controls__player-audio-timeEnd">04:18</p>
+                    </div>
+
+                </div>
+                <div class="player-controls-right">
+                    <ul class="player-controls-right-item">
+                        <li class="player-controls-right-list">
+                            <i class="fa-solid fa-compact-disc"></i>
+                        </li>
+                        <li class="player-controls-right-list">
+                            <i class="fas fa-microphone"></i>
+                        </li>
+                        <li class="player-controls-right-list">
+                            <i class="ti-layout-tab-window"></i>
+                        </li>
+                        <li class="player-controls-right-list">
+                            <i class="ti-volume btn-volumn"></i>
+                            <i class="fas fa-volume-mute btn-volumn-mute"></i>
+                            <input id="volume" class="volume" type="range" value="30" step="1" min="0" max="100">
+                        </li>
+                        <li class="player-controls-right-list">
+                            <div class="player-controls-right-line"></div>
+                        </li>
+                        <li class="player-controls-right-list">
+                            <i class="fa-solid fa-music"></i>
+                        </li>
+                    </ul>
+                </div>
+               </div>  
+               
+            </div>
+            <div class="playlist"  data-audio="http://127.0.0.1:5500/;" streamType="mp3">
+     
+            </div>
+    </div>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <h1 class="modal__body-title"> Giao Diện</h1>
+            <div class="modal__body-container">
+                <div class="modal__body-container-title">Dynamic</div>
+                <ul class="modal__body-container-list columns">
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/London-thumb.png" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active apply-london" href="#">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>London</p>
+                    
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/dynamic-light-dark-1.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Sáng Tối</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/dynamic-blue.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Xanh da trời</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/dynamic-pink.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Hồng</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/dynamic-brown.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Nâu</p>
+    
+                    </li>
+                </ul>
+                
+                <div class="modal__body-container-title">Chủ Đề</div>
+                <ul class="modal__body-container-list columns">
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/xone-thumbn.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>XONE</p>
+                    
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/zma.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Zing Music Awards</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/eiffel.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Tháp Eiffel</p>
+                        
+                    </li>
+                </ul>
+
+                <div class="modal__body-container-title">Nghệ Sĩ</div>
+                <ul class="modal__body-container-list columns">
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/jack.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Jack</p>
+                    
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/iu.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>IU</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/ji-chang-wook.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Ji Chang Wook</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/lisa.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Lisa</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/jennie.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Jennie Kim</p>
+    
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/jisoo.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Jisoo</p>
+    
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/rose.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Rosé</p>
+    
+                    </li>
+                </ul>
+
+                <div class="modal__body-container-title">Màu Tối</div>
+                <ul class="modal__body-container-list columns">
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/London-thumb.png" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>London</p>
+                    
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/dynamic-light-dark-1.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Sáng Tối</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/dynamic-blue.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Xanh da trời</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/dynamic-pink.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Hồng</p>
+                        
+                    </li>
+                    <li class="modal__body-container-item c-2">
+                        <div class="modal__body-container-item-img">
+                            <img src="/assets/img/background/dynamic-brown.jpg" alt="">
+                            <div class="modal__body-container-overlay">
+
+                            </div>
+                            <div class="modal__body-container-btn">
+                                <a class="modal-btn-active" href="">ÁP DỤNG</a>
+                                <a href="">XEM TRƯỚC</a>
+                            </div>
+                        </div>
+                        <p>Nâu</p>
+    
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__body-iconClose">
+                <i class="ti-close"></i>
+            </div>
+        </div>
+       
+    </div>
+    <script src="./main.js"> </script>
+</body>
+</html>
